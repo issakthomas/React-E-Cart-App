@@ -58,7 +58,23 @@ const Cart = () => {
                 <button className="bg-red-600 rounded p-2 text-white">
                   Empty Cart
                 </button>
-                <Link to={"/"} className="bg-blue-600 ms-3 rounded p-2 text-white">Shop More</Link>
+                <Link
+                  to={"/"}
+                  className="bg-blue-600 ms-3 rounded p-2 text-white"
+                >
+                  Shop More
+                </Link>
+              </div>
+            </div>
+            <div className="col-span-1">
+              <div className="border rounded p-5 shadow">
+                <h2 className="text-2xl font-bold my-4">
+                  Total Amount: <span className="color-red-600">$9.99</span>
+                </h2>
+                <hr />
+                <button className="bg-green-600 rounded p-2 text-white w-full mt-4">
+                  Checkout
+                </button>
               </div>
             </div>
           </div>
