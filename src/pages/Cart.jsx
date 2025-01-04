@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Header from "../components/Header";
 
 const Cart = () => {
@@ -20,7 +21,45 @@ const Cart = () => {
                     <td className="font-semibold">...</td>
                   </tr>
                 </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Product</td>
+                    <td>
+                      <img
+                        src="https://img.freepik.com/free-vector/shopping-supermarket-cart-with-grocery-pictogram_1284-11697.jpg?semt=ais_hybrid"
+                        alt=""
+                        style={{ width: "70px", height: "70px" }}
+                      />
+                    </td>
+                    <td>
+                      <div className="flex">
+                        <button className="font-bold">-</button>
+                        <input
+                          style={{ width: "40px" }}
+                          type="text"
+                          className="border p-1 rounded mx-2"
+                          value={2}
+                          readOnly
+                        />
+                        <button className="font-bold">+</button>
+                      </div>
+                    </td>
+                    <td>$100</td>
+                    <td>
+                      <button className="text-red-600">
+                        <i className="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
               </table>
+              <div className="float-right mt-5">
+                <button className="bg-red-600 rounded p-2 text-white">
+                  Empty Cart
+                </button>
+                <Link to={"/"} className="bg-blue-600 ms-3 rounded p-2 text-white">Shop More</Link>
+              </div>
             </div>
           </div>
         </>
